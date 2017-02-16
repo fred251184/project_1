@@ -1,4 +1,5 @@
 ActiveAdmin.register MsGender do
+  permit_params :name, :is_active
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
