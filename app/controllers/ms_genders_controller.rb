@@ -29,6 +29,7 @@ class MsGendersController < ApplicationController
   # POST /ms_genders.json
   def create
     @ms_gender = MsGender.new(ms_gender_params)
+    @ms_gender.user = current_user
 
     respond_to do |format|
       if @ms_gender.save
