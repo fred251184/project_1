@@ -1,6 +1,5 @@
-<h1>Editing ms_gender</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @ms_gender %> |
-<%= link_to 'Back', ms_genders_path %>
+<%- model_class = MsGender -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => MsGender %></h1>
+</div>
+<%= render :partial => 'form' %>
