@@ -1,0 +1,29 @@
+<h1>Listing ms_genders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Is active</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ms_genders.each do |ms_gender| %>
+      <tr>
+        <td><%= ms_gender.name %></td>
+        <td><%= ms_gender.is_active %></td>
+        <td><%= ms_gender.user %></td>
+        <td><%= link_to 'Show', ms_gender %></td>
+        <td><%= link_to 'Edit', edit_ms_gender_path(ms_gender) %></td>
+        <td><%= link_to 'Destroy', ms_gender, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ms gender', new_ms_gender_path %>

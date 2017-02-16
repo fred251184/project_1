@@ -1,0 +1,1 @@
+json.partial! "ms_genders/ms_gender", ms_gender: @ms_gender

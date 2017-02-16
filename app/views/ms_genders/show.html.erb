@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ms_gender.name %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @ms_gender.is_active %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ms_gender.user %>
+</p>
+
+<%= link_to 'Edit', edit_ms_gender_path(@ms_gender) %> |
+<%= link_to 'Back', ms_genders_path %>

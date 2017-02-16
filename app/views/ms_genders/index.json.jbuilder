@@ -1,0 +1,1 @@
+json.array! @ms_genders, partial: 'ms_genders/ms_gender', as: :ms_gender
